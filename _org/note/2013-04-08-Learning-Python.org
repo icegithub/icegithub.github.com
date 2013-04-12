@@ -1,0 +1,40 @@
+#+TITLE:Learning Python
+#+AUTHOR:ICECREAM(氷菓)
+#+EMAIL:creamidea(AT)gmail.com
+#+OPTIONS:H:4 num:t toc:t \n:nil @:t ::t |:t ^:t f:t TeX:t email:t
+#+LINK_HOME: https://creamidea.github.io
+#+STYLE:<link href="../css/style.css" rel="stylesheet" type="text/css">
+#+STYLE:<link href='../font/Libre_Baskerville' rel='stylesheet' type='text/css'>
+#+STYLE:<link href='../font/Great_Vibes' rel='stylesheet' type='text/css'>
+#+STYLE:<link href='../font/Montserrat' rel='stylesheet' type='text/css'>
+#+INFOJS_OPT:
+
+#+BEGIN_HTML
+---
+layout: doc
+title: Learning Python
+subtitle: 学习Python的小型笔记 
+categories: note
+tags: python
+---
+#+END_HTML
+
+* 前言
+这个仅仅是一个开始。是的，这个仅仅是一个开始。
+
+为何学习python？因为
+#+BEGIN_QUOTE
+life is short - you need Python!
+#+END_QUOTE
+*From* http://love-python.blogspot.com/
+
+还有就是下面一个项目需要使用python[fn:1]和tornado[fn:2]来开发项目，一个上位机吧。
+我们小组主要负责数据展示这个部分。硬件部分，也就是实际数据采集那个部分由企业来负责。
+
+等待学习记录中...
+
+* Footnotes
+
+[fn:1] http://www.python.org/
+
+[fn:2] http://www.tornadoweb.org/en/stable/

@@ -1,0 +1,70 @@
+safe:        true
+auto:        false
+server:      true
+# server_port: 4000
+# url: http://localhost:4000
+paginator: 5
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+future:      true
+lsi:         false
+pygments:    true
+# markdown:    maruku
+# permalink: /docs/:categories/:title
+permalink:   /:categories/:year/:month/:day/:title
+# permalink:   /:year/:month/:day/:title
+# permalink:   date
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+  
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
+
+exclude:
+    .git
+    .gitingore
+    org
+
+title: icecream
+domain: icecream.me
+author:
+  name: icecream
+  email: creamidea@gmail.com
+
+archive: /archive
+about: /about
+rss: /rss/index.xml
+tags_path: /tags
+categories_path: /categories
+search: /public/search.html
+
+email_me: <a href="mailto:{{ site.author.email }}"><strong>[E-Mail<i class="icon-envelope"></i>]</strong></a>
+
+google_analytics_id: UA-38213594-1
+google_custom_search_id: 017951989687920165329:0e60irxxe5m

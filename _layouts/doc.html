@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% include right_navigation.html %}
+
+    <div class="article-head">
+      <!-- artical title -->
+      <h1 id="article_title">{{ page.title }}</h1>
+      <!-- artical subtitle -->
+    </div>
+    <!-- page basic info -->
+    <p class="posted-time">
+      <code><i class="icon-time"></i> {{ page.date | date: '%A, %d %B %Y' }}</code>
+      <!-- <code><i class="icon-file-alt"></i> Posted by{% if page.author %}<a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>{% else %}<a href="mailto:{{ site.author.email }}"> <i class="icon-envelope"></i> {{ site.author.name }}</a>{% endif %} at <i class="icon-time"></i> {{ page.date | date: '%A, %d %B %Y, %r' }}</code> -->
+    </p>
+    <!-- Update the date of modify -->
+    {% if page.updated %}
+    <p class="updated-time">
+      <code>Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span></code>
+    </p>
+    {% endif %}
+    <!-- <\!-- Show the count of the disqus -\-> -->
+    <!-- <p><i class="icon-comments-alt"></i> >> <a href="{{ page.url }}#disqus_thread"></a></p> -->
+
+    <!-- 水平分割虚线(Horizontal dividing dotted line) -->
+    <!-- <hr /> -->
+
+    <!-- the content of the artical -->
+    {{ content }}
+    <!-- 水平分割虚线(Horizontal dividing dotted line) -->
+    <hr />
+
+    <!-- the nagivation below the article -->
+    {% include section_nav.html %}
+
+  <div class="clear"></div>
+
+<!-- documents keyboard setting -->
+{% include doc_key.html %}
+<!-- Back To Top -->
+<div class="backToTop">
+  <a href="#top">
+    <i class="icon-chevron-up"></i>
+  </a>
+</div>
+
+<!-- Load disqus model -->
+<h1 style="color: yellowgreen;"> Comments </h1>
+{% include disqus.html %}
